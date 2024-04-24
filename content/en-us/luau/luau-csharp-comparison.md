@@ -365,11 +365,11 @@ do
     outerVar = 'Inner scope modified text'
     -- Introduce a local variable
     local innerVar = 'Inner scope text'
-    print('1: ' .. outerVar)    -- prints "1: Inner scope modified text"
-    print('2: ' .. innerVar)    -- prints "2: Inner scope text"
+    print(`1: {outerVar}`)    -- prints "1: Inner scope modified text"
+    print(`2: {innerVar}`)    -- prints "2: Inner scope text"
 end
 
-print('3: ' .. outerVar)        -- prints "3: "Inner scope modified text"
+print(`3: {outerVar}`)        -- prints "3: "Inner scope modified text"
 -- Attempting to print 'innerVar' here would fail
 ```
 
@@ -565,7 +565,7 @@ void variableArguments(params string[] inventoryItems) {
 ```lua title='Named Arguments in Luau'
 -- Named arguments
 local function namedArguments(args)
-	return args.name .. "'s birthday: " .. args.dob
+	return `{args.name}'s birthday: {args.dob}`
 end
 
 namedArguments{name="Bob", dob="4/1/2000"}

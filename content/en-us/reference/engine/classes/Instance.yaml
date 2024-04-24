@@ -898,7 +898,7 @@ methods:
       part:SetAttribute("CanUse", true)
 
       for name, value in part:GetAttributes() do
-      	print(name .. " = " .. value)
+      	print(`{name} = {value}`)
       end
       ```
 
@@ -930,7 +930,7 @@ methods:
       local children = workspace:GetChildren()
       for i = 1, #children do
       	local child = children[i]
-      	print(child.Name .. " is child number " .. i)
+      	print(`{child.Name} is child number {i}`)
       end
       ```
 
@@ -938,7 +938,7 @@ methods:
       -- Generic for-loop example
       local children = workspace:GetChildren()
       for i, child in children do
-      	print(child.Name .. " is child number " .. i)
+      	print(`{child.Name} is child number {i}`)
       end
       ```
 
