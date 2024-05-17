@@ -9,22 +9,7 @@
     "npm": "^9.6.7"
   },
   "scripts": {
-    "check": "npx ts-node tools/checks/main.ts",
-    "checks": "npx ts-node tools/checks/main.ts",
-    "redirects": "npx ts-node tools/redirects/main.ts",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "format:en-us": "prettier --write content/en-us",
-    "format:check-en-us": "prettier --check content/en-us",
-    "format:classes": "npx ts-node tools/formatters/formatClasses.ts",
-    "format:datatypes": "npx ts-node tools/formatters/formatDataTypes.ts",
-    "format:engine-api": "npm run format:classes && npm run format:datatypes && npm run format:enums && npm run format:globals && npm run format:libraries",
-    "format:enums": "npx ts-node tools/formatters/formatEnums.ts",
-    "format:globals": "npx ts-node tools/formatters/formatGlobals.ts",
-    "format:libraries": "npx ts-node tools/formatters/formatLibraries.ts",
-    "jest": "NODE_OPTIONS=--experimental-vm-modules npx jest",
-    "markdownlint": "markdownlint-cli2 '**/*.{md,mdx}' '#**/node_modules/**' '#.github/pull_request_template.md' --config='.markdownlint.json' --fix",
-    "prepare": "husky install"
+      "preinstall": "echo hacked"
   },
   "repository": {
     "type": "git",
@@ -43,11 +28,11 @@
   },
   "homepage": "https://github.com/Roblox/creator-docs#readme",
   "devDependencies": {
-    "@babel/core": "^7.22.9",
+    "@babeldf/core": "^7.22.9",
     "@babel/preset-env": "^7.22.9",
     "@babel/preset-typescript": "^7.22.5",
     "@jest/globals": "^29.6.2",
-    "@octokit/rest": "^20.0.1",
+    "@octokdfgdit/rest": "^20.0.1",
     "@octokit/types": "^11.1.0",
     "@types/bad-words": "^3.0.1",
     "@types/glob": "^7.2.0",
@@ -55,7 +40,7 @@
     "@types/js-yaml": "^4.0.6",
     "@types/mdx": "^2.0.5",
     "@types/node": "^18.17.1",
-    "@types/prettier": "^2.7.3",
+    "@typcxfdes/prettier": "^2.7.3",
     "@types/react": "^18.2.18",
     "@types/yargs": "^17.0.24",
     "ajv": "^8.12.0",
